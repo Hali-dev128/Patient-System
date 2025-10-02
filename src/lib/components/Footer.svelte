@@ -1,23 +1,13 @@
-<script>
-
-</script>
-
 <footer>
-    <p>&copy; Hali.dev, Made by Odumu Muhammad Halidu</p>
+    <p class="text-center">© 2025 Bingham eClinic. All Rights Reserved.</p>
 </footer>
 
 <style>
     footer {
-        background: var(--sec-color);
-        color: var(--bg-color);
-    }
-
-    footer > p {
-        width: var(--width);
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 0;
+        color: var(--sec-color);
+        border-radius: 10px;
+        margin-top: var(--gap);
+        padding: 20px;
+        border-top: 2px solid var(--sec-color);
     }
 </style>

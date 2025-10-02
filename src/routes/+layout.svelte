@@ -1,30 +1,48 @@
 <script>
-	import Footer from '$lib/components/Footer.svelte';
-	import Header from '$lib/components/Header.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
+	import { fade } from 'svelte/transition';
 	import '../app.css';
+	import { page } from '$app/stores';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import { Toaster } from 'svelte-french-toast';
+    import { IsUserLogin } from "$lib/stores/ManagementStore";
+    import { goto } from "$app/navigation";
+	import { onMount } from "svelte";
+	import Sidebar from '$lib/components/Sidebar.svelte';
+	import Loading from '$lib/shared/Loading.svelte';
+	import { Role } from "$lib/stores/ManagementStore";
 </script>
 
-<svelte:head>
-    <title>Hali.dev 🫡</title>
-</svelte:head>
+<Toaster />
 
+{#if $IsUserLogin == 'logged'}
+    <Sidebar />
+{/if}
 
-<main>
-	<Header/>
-	<Navbar/>
-	
-	<article>
-		<slot></slot>
-	</article>
+<div>
+    <Navbar/>
 
-	<Footer/>
-</main>
- 
+    <main class="main">
+        
+        <article>
+            <slot></slot>
+            <!-- <select bind:value={$Role} class="text-zinc-900">
+                <option value="patient">patient</option>
+                <option value="doctor">doctor</option>
+                <option value="nurse">nurse</option>
+            </select> -->
+        </article>
+    </main>
+
+    <Footer/>
+</div>
+
 <style>
-	article {
-		display: grid;
-		grid-gap: var(--gap);
-		margin-bottom: var(--gap);
-	}
+    div, article {
+        display: grid;
+    }
+
+    article {
+        gap: var(--gap);
+    }
 </style>

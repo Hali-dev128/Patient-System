@@ -1,35 +1,53 @@
 <script>
-    export const lightBtn = true;
-    export const errBtn = false;
+    export let type = 'button';
+    export let diff = false;
+    export let light = false;
+    export let full = false;
+    export let flex = false;
+    export let rad = false;
+    export let active = false;
 </script>
 
-<button class="btn-active" class:light={lightBtn} class:err={errBtn}>
+<button 
+    class="btn"
+    type={type === 'button' ? 'button' : 'submit'}
+    class:diff={diff}
+    class:active={active}
+    class:light={light}
+    class:full={full}
+    class:flex={flex}
+    class:rad={rad}
+    on:click
+>
     <slot></slot>
 </button>
 
 <style>
-    button {
-        background-color: var(--sec-color);
-        border: 2px solid transparent;
-        color: var(--bg-color);
-        padding: 5px 15px;
-        cursor: pointer;
-        transition: 150ms ease-in-out;
-        transition: 150ms ease-in-out;
-    }
-
-    .btn-active.light:hover, .btn-active.err:hover {
-        border: 2px solid var(--sec-color);
+    .btn.diff:hover {
         color: var(--sec-color);
     }
 
-    .btn-active:hover {
-        background-color: transparent;
-        border: 2px solid var(--sec-color);
-        color: var(--sec-color);
-    }
     
-    .btn-active:active {
-        scale: .97;
+    .light {
+        background-color: var(--pri-color);
+        color: var(--sec-color);
     }
+
+    .light:hover, .active {
+        background-color: transparent;
+        color: var(--pri-color);
+        border: 2px solid var(--pri-color);
+    }
+
+    .full {
+        width: 100% !important;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .rad {border-radius: 10px;}
 </style>
