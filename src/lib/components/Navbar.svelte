@@ -13,7 +13,7 @@
 </script>
 
 <nav>
-    <section>
+    <section class:difSmall={$IsUserLogin !== 'logged' ? true : false}>
         <a href="/">
             <h2 class="font-bold text-xl">Bingham eClinic</h2>
         </a>
@@ -23,7 +23,7 @@
             <!-- svelte-ignore a11y_no_static_element_interactions -->
             <button class="user text-start" on:focus={handleClick} on:focusout={handleClick}>
                 <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
-                <span>
+                <span class="identity">
                     <h4 class="capitalize font-bold">Odumu Muhammad</h4>
                     <small class="capitalize">{$Role}</small>
                 </span>
@@ -108,6 +108,6 @@
     }
 
     .out.open {
-        translate: 0% 150%;
+        translate: -100% 150%;
     }
 </style>
