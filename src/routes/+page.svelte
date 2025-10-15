@@ -12,7 +12,7 @@
     <p out:fly={{x: 400}} in:fly={{delay: 200, x: 400}}>Welcome to the official digital clinic of Bingham University. Access your health services conveniently anytime, anywhere. And is a secure platform for managing appointments, medical records, prescriptions, and billing for students and staff.</p>
 </header>
 
-<section class="toScrollAnimate about">
+<section class="about">
     <h2 class="font-bold text-xl">About</h2>
     <p>The Bingham University Clinic provides quality healthcare services for students, staff, and the university community. This system streamlines access to appointments, medical records, and billing.</p>
 </section>
@@ -20,19 +20,19 @@
 <section class="features">
     <h2 class="font-bold text-xl">Features</h2>
     <ul>
-        <li class="toScrollAnimate">
+        <li>
             <h3 class="font-bold text-xl">📅 Appointments</h3>
             <p>The Appointment module enables patients to schedule clinic visits with doctors, while allowing doctors and administrators to manage, approve, and track appointments in real time. It eliminates manual booking, reduces wait time, and ensures better patient flow at the clinic.</p>
         </li>
-        <li class="toScrollAnimate">
+        <li>
             <h3 class="font-bold text-xl">📁 Medical Records</h3>
             <p>The Medical Records module securely stores and manages each patient’s clinical history, including diagnoses, treatments, prescriptions, and test results. Patients can view their records, doctors can update them, and administrators ensure proper access control.</p>
         </li>
-        <li class="toScrollAnimate">
+        <li>
             <h3 class="font-bold text-xl">💊 Prescriptions</h3>
             <p>The Prescriptions module allows doctors to issue digital prescriptions linked to patient records, ensuring easy access to medications and treatment plans. Patients can view prescriptions online, while administrators manage prescription history and prevent misuse.</p>
         </li>
-        <li class="toScrollAnimate">
+        <li>
             <h3 class="font-bold text-xl">💳 Billing & Invoices</h3>
             <p>The Billing & Invoice module handles patient payments for consultations, medications, and lab tests. It allows patients to view and pay bills, doctors to log chargeable services, and administrators to generate invoices, track payments, and ensure transparency in financial records.</p>
         </li>
@@ -57,7 +57,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 10px;
-        border-bottom-left-radius: 150px;
+        border-bottom-left-radius: 100px;
     }
 
     .header h1, .header p {
@@ -65,6 +65,7 @@
     }
         
     .header::before, .header img {
+        object-fit: cover;
         content: '';
         position: absolute;
         top: 0;
