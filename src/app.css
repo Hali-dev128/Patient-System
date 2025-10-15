@@ -28,7 +28,7 @@ body, ::-webkit-scrollbar-track {
 	background-color: var(--pri-color);
 }
 
-body {
+body, html {
     font-family: var(--font-mono);
     /* font-family: cursive; */
     color: var(--sec-color);
@@ -191,6 +191,8 @@ article.docAppoint > section {
 .records, .prescribe, .vitals, .notes, .records > ul , .vitals ul.vit, .prescribe > ul{
     max-height: 400px;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -310,6 +312,15 @@ article.docAppoint > section {
         position: static;
         align-self: start;
         margin-top: 5px;
+    }
+    .identity {
+        display: none;
+    }
+    nav > section.difSmall {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
     }
 }
 
