@@ -2,7 +2,7 @@
 	import Button from "$lib/shared/Button.svelte";
 </script>
 
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
@@ -14,7 +14,7 @@
         <Button light={true}>Book Appointment</Button>
     </span>
 </li>
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
@@ -28,7 +28,7 @@
         </Button>
     </span>
 </li>
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
@@ -40,7 +40,7 @@
         <Button light={true}>Book Appointment</Button>
     </span>
 </li>
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
@@ -54,7 +54,7 @@
         </Button>
     </span>
 </li>
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
@@ -66,7 +66,7 @@
         <Button light={true}>Book Appointment</Button>
     </span>
 </li>
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
@@ -80,7 +80,7 @@
         </Button>
     </span>
 </li>
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
@@ -92,7 +92,7 @@
         <Button light={true}>Book Appointment</Button>
     </span>
 </li>
-<li class="relative">
+<li class="relative toScrollAnimate">
     <span>
         <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-circle-user-round-icon lucide-circle-user-round lucide-icon customizable"><path d="M18 20a6 6 0 0 0-12 0"></path><circle cx="12" cy="10" r="4"></circle><circle cx="12" cy="12" r="10"></circle></svg>
     </span>
