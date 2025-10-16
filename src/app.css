@@ -30,9 +30,8 @@ body, ::-webkit-scrollbar-track {
 
 body, html {
     font-family: var(--font-mono);
-    /* font-family: cursive; */
     color: var(--sec-color);
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 nav > section, footer, .header h1, .header p, .about, .features, .contact, .dash {
