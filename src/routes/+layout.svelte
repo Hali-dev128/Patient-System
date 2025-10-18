@@ -26,7 +26,7 @@
         
         <article>
             <slot></slot>
-            <select style="width: var(--width); margin: 0 auto;" bind:value={$Role} class="text-zinc-900">
+            <select style="width: var(--width); margin: 0 auto; border-radius: 10px;" bind:value={$Role} class="text-zinc-900">
                 <option value="patient">patient</option>
                 <option value="doctor">doctor</option>
                 <option value="nurse">nurse</option>
