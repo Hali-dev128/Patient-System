@@ -26,10 +26,11 @@
         
         <article>
             <slot></slot>
-            <select bind:value={$Role} class="text-zinc-900">
+            <select style="width: var(--width); margin: 0 auto;" bind:value={$Role} class="text-zinc-900">
                 <option value="patient">patient</option>
                 <option value="doctor">doctor</option>
                 <option value="nurse">nurse</option>
+                <option value="admin">admin</option>
             </select>
         </article>
     </main>
