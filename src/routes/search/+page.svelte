@@ -6,10 +6,15 @@
 	import Patient from "./Patient.svelte";
 	import Doctor from "./Doctor.svelte";
 	import { Role } from "$lib/stores/ManagementStore";
+	import toast from "svelte-french-toast";
 
     onMount(() => {
         if ($IsUserLogin == '') {
             goto('/login')
+        }
+		if ($Role == 'admin') {
+            goto('/login')
+            toast.error('Sorry, this feature is not available to you yet');
         }
     })
 
