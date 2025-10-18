@@ -7,6 +7,7 @@
 	import Nurse from "./Nurse.svelte";
 	import { fade } from "svelte/transition";
 	import { Role } from "$lib/stores/ManagementStore";
+	import Admin from "./Admin.svelte";
 
     onMount(() => {
         if ($IsUserLogin == '') {
@@ -20,6 +21,8 @@
         <Patient/>
     {:else if $Role == 'doctor'}
         <Doctor/>
+    {:else if $Role == 'admin'}
+        <Admin/>
     {:else if $Role == 'nurse'}
         <Nurse/>
     {/if}
