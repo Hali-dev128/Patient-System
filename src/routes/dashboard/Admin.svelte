@@ -18,6 +18,9 @@
                 </span>
                 <Button full={true} light={true}>Change Password</Button>
                 <Button full={true} light={true}>Change Profile pic</Button>
+                <a href="https://www.portal.mdcn.gov.ng/confirm-doctor-status" target="_blank">
+                    <Button full={true} light={true}>Verify Staff</Button>
+                </a>
             </div>
         </section>
         <section>
