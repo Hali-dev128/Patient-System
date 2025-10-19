@@ -20,8 +20,9 @@
     <label for="" class="font-bold">Professional Information</label>
     <input type="text" name="staffId" id="staffId" value={`${crypto.randomUUID()}`} readonly title="Staff ID">
     <input type="text" name="specialization" id="specialization" value="Surgery" readonly title="Specialization">
-    <input type="text" name="license" id="license" value={`${crypto.randomUUID()}`} readonly title="License Number">
-    <input type="text" name="license" id="license" value={`15 Years`} readonly title="Years Of Experience">
+    <input type="text" name="folio" id="folio" value={`${crypto.randomUUID()}`} readonly title="Folio Number">
+    <input type="text" name="years" id="years" value={`15 Years`} readonly title="Years Of Experience">
+    <input type="text" name="link" id="link" value={`https//jam.com`} readonly title="Document URL">
 
     <Button type={'button'} light={true}>Change Password</Button>
     <Button type={'submit'} light={true}>Save Changes</Button>
