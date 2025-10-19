@@ -27,7 +27,7 @@
                     <li style="font-size: 14px;"><span class="font-bold">Email: </span> james344@gmail.com</li>
                     <li style="font-size: 14px;"><span class="font-bold">Staff ID: </span> {crypto.randomUUID().replaceAll('-', '')}</li>
                     <li style="font-size: 14px;"><span class="font-bold">Specialization: </span> Surgeon</li>
-                    <li style="font-size: 14px;"><span class="font-bold">License Number:</span>  345678907</li>
+                    <li style="font-size: 14px;"><span class="font-bold">Folio Number:</span>  345678907</li>
                     <li style="font-size: 14px;"><span class="font-bold">Years Of Experience:</span>  14</li>
                 </ul>
             </div>
