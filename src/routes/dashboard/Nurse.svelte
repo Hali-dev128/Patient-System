@@ -27,7 +27,7 @@
                     <li style="font-size: 14px;"><span class="font-bold">Email: </span> angie745@gmail.com</li>
                     <li style="font-size: 14px;"><span class="font-bold">Staff ID: </span> {crypto.randomUUID().replaceAll('-', '')}</li>
                     <li style="font-size: 14px;"><span class="font-bold">Unit: </span> General Ward</li>
-                    <li style="font-size: 14px;"><span class="font-bold">License Number:</span>  345678907</li>
+                    <li style="font-size: 14px;"><span class="font-bold">NMCN License Number:</span>  345678907</li>
                     <li style="font-size: 14px;"><span class="font-bold">Years Of Experience:</span>  8</li>
                 </ul>
             </div>
