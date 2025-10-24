@@ -102,13 +102,13 @@ form.form div {
 .pass span svg {
     pointer-events: none;
 }
-.docAppoint .pass, .notes .pass, .records .pass, .prescribe .pass  {
+.docAppoint .pass, .notes .pass, .records .pass, .prescribe .pass, .pass  {
     padding: 3px;
     color: var(--pri-color);
     background-color: var(--sec-color);
     border-radius: 10px;
 }
-.docAppoint .pass label, .notes .pass label, .records .pass label, .prescribe .pass label  {
+.docAppoint .pass label, .notes .pass label, .records .pass label, .prescribe .pass label, .pass label  {
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -116,7 +116,7 @@ form.form div {
     top: 50%;
     transform: translateY(-50%) translateX(-50%);
 }
-.docAppoint .pass label svg, .notes .pass label svg, .records .pass label svg, .prescribe .pass label svg  {
+.docAppoint .pass label svg, .notes .pass label svg, .records .pass label svg, .prescribe .pass label svg, .pass label svg  {
     pointer-events: none;
 }
 /* Dashboard */
