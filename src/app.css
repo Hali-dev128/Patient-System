@@ -62,7 +62,7 @@ form.form, form.form > section {
     gap: 15px;
 }
 
-form.form input, form.form select, form.form textarea, input{
+form.form input, form.form select, form.form textarea, input, .pay{
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid var(--pri-color);
@@ -206,7 +206,7 @@ article.docAppoint > section {
     grid-gap: 10px;
 }
 
-.notes ul, .records > ul, .prescribe > ul, .searchList ul {
+.notes ul, .records > ul, .prescribe > ul, .searchList ul, .patientPay {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     grid-gap: 10px;
@@ -243,7 +243,7 @@ article.docAppoint > section {
     overflow: hidden;
 }
 
-.records > ul > li:hover , .prescribe > ul > li:hover, .vitals ul.vit > li:hover, .notes ul > li:hover {
+.records > ul > li:hover , .prescribe > ul > li:hover, .vitals ul.vit > li:hover, .notes ul > li:hover, .patientPay li:hover {
     scale: .98;
 }
 
@@ -307,7 +307,7 @@ article.docAppoint > section {
     .vitals > span {
         grid-template-columns: 1fr;
     }
-    li > span.flex {
+    li > span.flex, li > div > div.flex.flex-wrap.self-end.absolute {
         position: static;
         align-self: start;
         margin-top: 5px;
