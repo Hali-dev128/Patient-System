@@ -187,4 +187,8 @@
         -webkit-overflow-scrolling: touch;
         overscroll-behavior: contain;
     }
+
+    span.cursor-pointer:active {
+        scale: .96;
+    }
 </style>
