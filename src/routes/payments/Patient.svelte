@@ -182,5 +182,9 @@
 
     .patientPay {
         grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+        max-height: 500px;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        overscroll-behavior: contain;
     }
 </style>
