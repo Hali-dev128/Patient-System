@@ -62,7 +62,7 @@ form.form, form.form > section {
     gap: 15px;
 }
 
-form.form input, form.form select, form.form textarea, input, .pay{
+form.form input, form.form select, form.form textarea, textarea, input, .pay{
     border-radius: 10px;
     background-color: transparent;
     border: 2px solid var(--pri-color);
@@ -71,7 +71,7 @@ form.form input, form.form select, form.form textarea, input, .pay{
 form.form select option {
     color: var(--sec-color);
 }
-form.form textarea {
+form.form textarea, textarea {
     resize: none;
     height: 110px;
 }
@@ -254,6 +254,28 @@ article.docAppoint > section {
 
 .searchList:has(li:nth-of-type(3n)) li > span, .searchList:has(li.longer:nth-of-type(2n)) li.longer > span {
     position: static;
+}
+
+.patientPay li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px 10px;
+    justify-content: space-between;
+    transition: 150ms ease-in-out;
+    border: 0;
+    background-color: var(--sec-color);
+    color: var(--pri-color);
+}
+
+.patientPay {
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    padding: 5px;
+    max-height: 500px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
 }
 
 /* BUTTONs */
