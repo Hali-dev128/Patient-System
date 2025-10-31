@@ -1,6 +1,13 @@
 <script>
 	import Button from "$lib/shared/Button.svelte";    
+    import PatientHistory from "$lib/shared/modals/PatientHistory.svelte"
+
+    let variable = false;
 </script>
+
+{#if variable}
+    <PatientHistory on:click={() => variable = false} />
+{/if}
 
 <div class="dash">
     <h2 class="font-bold text-xl">Payments</h2>
@@ -47,7 +54,9 @@
                         <span><strong>Date:</strong> 11/09/2025</span>
                         <div class="flex gap-1.5 flex-wrap self-end absolute bottom-1.5">
                             <span class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-bell-ring-icon lucide-bell-ring lucide-icon customizable"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M22 8c0-2.3-.8-4.3-2-6"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path><path d="M4 2C2.8 3.7 2 5.7 2 8"></path></svg></span>
-                            <span title="View Payment History" class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                            <!-- svelte-ignore a11y_no_static_element_interactions -->
+                            <!-- svelte-ignore a11y_click_events_have_key_events -->
+                            <span title="View Payment History"  on:click={() => variable = true} class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                         </div>
                     </div>
                 </li>
@@ -61,7 +70,9 @@
                         <span><strong>Date:</strong> 11/09/2025</span>
                         <div class="flex gap-1.5 flex-wrap self-end absolute bottom-1.5">
                             <span class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-bell-ring-icon lucide-bell-ring lucide-icon customizable"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M22 8c0-2.3-.8-4.3-2-6"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path><path d="M4 2C2.8 3.7 2 5.7 2 8"></path></svg></span>
-                            <span title="View Payment History" class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                            <!-- svelte-ignore a11y_no_static_element_interactions -->
+                            <!-- svelte-ignore a11y_click_events_have_key_events -->
+                            <span title="View Payment History"  on:click={() => variable = true} class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                         </div>
                     </div>
                 </li>
@@ -75,7 +86,9 @@
                         <span><strong>Date:</strong> 11/09/2025</span>
                         <div class="flex gap-1.5 flex-wrap self-end absolute bottom-1.5">
                             <span class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-bell-ring-icon lucide-bell-ring lucide-icon customizable"><path d="M10.268 21a2 2 0 0 0 3.464 0"></path><path d="M22 8c0-2.3-.8-4.3-2-6"></path><path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path><path d="M4 2C2.8 3.7 2 5.7 2 8"></path></svg></span>
-                            <span title="View Payment History" class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                            <!-- svelte-ignore a11y_no_static_element_interactions -->
+                            <!-- svelte-ignore a11y_click_events_have_key_events -->
+                            <span title="View Payment History"  on:click={() => variable = true} class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                         </div>
                     </div>
                 </li>
@@ -99,7 +112,9 @@
                         <span><strong>Payment Type:</strong> Lab Tests</span>
                         <span><strong>Date:</strong> 11/09/2025</span>
                         <div class="flex gap-1.5 flex-wrap self-end absolute bottom-1.5">
-                            <span title="View Payment History" class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                            <!-- svelte-ignore a11y_no_static_element_interactions -->
+                            <!-- svelte-ignore a11y_click_events_have_key_events -->
+                            <span title="View Payment History"  on:click={() => variable = true} class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                         </div>
                     </div>
                 </li>
@@ -112,7 +127,9 @@
                         <span><strong>Payment Type:</strong> Lab Tests</span>
                         <span><strong>Date:</strong> 11/09/2025</span>
                         <div class="flex gap-1.5 flex-wrap self-end absolute bottom-1.5">
-                            <span title="View Payment History" class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                            <!-- svelte-ignore a11y_no_static_element_interactions -->
+                            <!-- svelte-ignore a11y_click_events_have_key_events -->
+                            <span title="View Payment History"  on:click={() => variable = true} class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                         </div>
                     </div>
                 </li>
@@ -125,7 +142,9 @@
                         <span><strong>Payment Type:</strong> Lab Tests</span>
                         <span><strong>Date:</strong> 11/09/2025</span>
                         <div class="flex gap-1.5 flex-wrap self-end absolute bottom-1.5">
-                            <span title="View Payment History" class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
+                            <!-- svelte-ignore a11y_no_static_element_interactions -->
+                            <!-- svelte-ignore a11y_click_events_have_key_events -->
+                            <span title="View Payment History"  on:click={() => variable = true} class="cursor-pointer" style="background-color: var(--pri-color); color: var(--sec-color); padding: 4px 8px; border-radius: 100vmax;"><svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-eye-icon lucide-eye lucide-icon customizable"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
                         </div>
                     </div>
                 </li>
