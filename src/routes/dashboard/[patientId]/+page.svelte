@@ -41,7 +41,9 @@
                     <h3 class="font-bold text-xl">Odumu Muhammad</h3>
                 </span>
                 {#if $Role == 'doctor'}
-                    <Button light={true}>Bill Patient</Button>
+                    <a href={`/payments`}>
+                        <Button full='true' light={true}>Bill Patient</Button>
+                    </a>
                 {/if}
             </div>
             <div>
