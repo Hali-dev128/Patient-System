@@ -1,4 +1,3 @@
-
 <script>
 	import { fade, scale } from "svelte/transition";
 	import Button from "../Button.svelte";
@@ -6,15 +5,17 @@
 
 <article>
     <div class="backdrop" transition:fade={{duration: 250}}>
-        <span>
+        <!-- svelte-ignore a11y_click_events_have_key_events -->
+        <!-- svelte-ignore a11y_no_static_element_interactions -->
+        <span on:click>
             <svg data-v-15b35c9e="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-icon customizable lucide-x-icon lucide-x lucide-icon customizable"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </span>
     </div>
     <section transition:fade={{delay: 250}}>
         <h2 class="text-xl font-bold">Note</h2>
         <form class="flex flex-col gap-2.5">
-            <input type="text" name="title" required placeholder="Enter Title" readonly value="Something">
-            <textarea name="body" required placeholder="Enter Body" readonly value="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos cum enim, ad magni non suscipit illum inventore obcaecati ipsum autem id. Nam excepturi at cumque impedit provident ullam vel officiis."></textarea>
+            <input type="text" name="title" required readonly value="Something">
+            <textarea name="body" required readonly>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, dolor eos repellendus perferendis, cupiditate facere, sint esse non reprehenderit quia quas dolore ut quam eum nostrum magni sapiente necessitatibus nam.</textarea>
         </form>
     </section>
 </article>
