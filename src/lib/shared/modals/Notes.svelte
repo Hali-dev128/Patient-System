@@ -12,7 +12,7 @@
     <section transition:fade={{delay: 250}}>
         <h2 class="text-xl font-bold">Create Note</h2>
         <form class="flex flex-col gap-2.5">
-            <input type="number" name="title" required placeholder="Enter Title">
+            <input type="text" name="title" required placeholder="Enter Title">
             <textarea name="body" required placeholder="Enter Body"></textarea>
             <Button light='true' full='true'>Create</Button>
         </form>
