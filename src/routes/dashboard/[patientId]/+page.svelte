@@ -6,13 +6,20 @@
 	import { fade } from "svelte/transition";
     import Button from "$lib/shared/Button.svelte";
 	import { Role } from "$lib/stores/ManagementStore";
+    import ViewNote from "$lib/shared/modals/ViewNote.svelte"
 
     onMount(() => {
         if ($IsUserLogin == '' || $Role == 'patient') {
             goto('/login')
         }
     })
+
+    let variable = false;
 </script>
+
+{#if variable}
+    <ViewNote on:click={() => variable = false} />
+{/if}
 
 <div class="dash">    
     <span class="flex items-center gap-1" style="color: var(--sec-color);">
@@ -110,7 +117,7 @@
                             <small>11:00am, 25th October 2025.</small>
                             <small>Written by Nurse Divine</small>
                         </span>
-                        <Button flex={true} light={true}>View
+                        <Button flex={true} light={true} on:click={() => variable = true}>View
                             <svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-text-icon lucide-book-open-text lucide-icon customizable"><path d="M12 7v14"></path><path d="M16 12h2"></path><path d="M16 8h2"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path><path d="M6 12h2"></path><path d="M6 8h2"></path></svg>
                         </Button>
                     </li>
@@ -122,7 +129,7 @@
                             <small>11:00am, 25th October 2025.</small>
                             <small>Written by Nurse Divine</small>
                         </span>
-                        <Button flex={true}>View
+                        <Button flex={true} on:click={() => variable = true}>View
                             <svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-text-icon lucide-book-open-text lucide-icon customizable"><path d="M12 7v14"></path><path d="M16 12h2"></path><path d="M16 8h2"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path><path d="M6 12h2"></path><path d="M6 8h2"></path></svg>
                         </Button>
                     </li>
@@ -134,7 +141,7 @@
                             <small>11:00am, 25th October 2025.</small>
                             <small>Written by Nurse Divine</small>
                         </span>
-                        <Button flex={true} light={true}>View
+                        <Button flex={true} light={true} on:click={() => variable = true}>View
                             <svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open-text-icon lucide-book-open-text lucide-icon customizable"><path d="M12 7v14"></path><path d="M16 12h2"></path><path d="M16 8h2"></path><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path><path d="M6 12h2"></path><path d="M6 8h2"></path></svg>
                         </Button>
                     </li>
