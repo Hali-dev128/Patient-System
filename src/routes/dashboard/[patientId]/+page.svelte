@@ -8,6 +8,9 @@
 	import { Role } from "$lib/stores/ManagementStore";
     import ViewNote from "$lib/shared/modals/ViewNote.svelte"
 	import Vitals from "$lib/shared/modals/Vitals.svelte";
+	import Notes from "$lib/shared/modals/Notes.svelte";
+	import Prescribe from "$lib/shared/modals/Prescribe.svelte";
+	import AddRecords from "$lib/shared/modals/AddRecords.svelte";
 
     onMount(() => {
         if ($IsUserLogin == '' || $Role == 'patient') {
@@ -17,6 +20,9 @@
 
     let variable = false;
     let variable2 = false;
+    let variable3 = false;
+    let variable4 = false;
+    let variable5 = false;
 </script>
 
 {#if variable}
@@ -24,6 +30,15 @@
 {/if}
 {#if variable2}
     <Vitals on:click={() => variable2 = false} />
+{/if}
+{#if variable3}
+    <Notes on:click={() => variable3 = false} />
+{/if}
+{#if variable4}
+    <AddRecords on:click={() => variable4 = false} />
+{/if}
+{#if variable5}
+    <Prescribe on:click={() => variable5 = false} />
 {/if}
 
 <div class="dash">    
@@ -104,7 +119,7 @@
                 <div class="flex justify-between items-center">
                     <h3 class="font-bold text-xl">Nurse Notes</h3>
                     {#if $Role == 'nurse'}
-                        <Button light={true}>
+                        <Button light={true} on:click={() => variable3 = true}>
                             <svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus lucide-icon customizable"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
                         </Button>
                     {/if}
@@ -158,7 +173,7 @@
                 <span class="flex justify-between items-center">
                     <h3 class="font-bold text-xl">Medical Records</h3>
                     {#if $Role == 'doctor'}
-                        <Button light={true}>
+                        <Button light={true} on:click={() => variable4 = true}>
                             <svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus lucide-icon customizable"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
                         </Button>
                     {/if}
@@ -221,7 +236,7 @@
                 <span class="flex justify-between items-center">
                     <h3 class="font-bold text-xl">Prescriptions</h3>
                     {#if $Role == 'doctor'}
-                        <Button light={true}>
+                        <Button light={true} on:click={() => variable5 = true}>
                             <svg data-v-14c8c335="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-plus-icon lucide-plus lucide-icon customizable"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>
                         </Button>
                     {/if}
