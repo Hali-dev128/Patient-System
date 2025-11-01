@@ -10,7 +10,7 @@
 	import Vitals from "$lib/shared/modals/Vitals.svelte";
 	import Notes from "$lib/shared/modals/Notes.svelte";
 	import Prescribe from "$lib/shared/modals/Prescribe.svelte";
-	import AddRecords from "$lib/shared/modals/AddRecords.svelte";
+	import AddRecords from "$lib/shared/modals/AddRecord.svelte";
 
     onMount(() => {
         if ($IsUserLogin == '' || $Role == 'patient') {
